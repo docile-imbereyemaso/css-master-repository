@@ -5,6 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/46ecabe206.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background-color: gainsboro;
+        }
+         .socials-container{
+            width: 50%;
+            margin: 50px auto;
+            display: flex;
+            gap: 50px;
+            
+         } 
+         .socials-container a {
+          background-color: white; 
+          padding: 0.7rem; 
+          width: 50px;
+          border-radius: 50%;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+          position: relative;
+          
+           
+
+         }
+        .socials-container a svg{
+           
+            fill: purple;
+            width: 100%;
+         
+            
+        }
+
+        .socials-container a::before{
+            content: attr(data-social);
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 10px 16px;
+            left: 0;
+            transform: translateY(-55px);
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        
+        }
+        
+    </style>
 </head>
 <body>
     <div class="socials-container">
